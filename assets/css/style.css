@@ -21,7 +21,11 @@ font-weight: normal;
 src: local('Perfect'), url('/fonts/PerfectDOSVGA437.f5cab0b9.woff2') format('woff2');
 }
 
+html, #__nuxt, #__layout  {
+    @apply h-full;
+}
+
 body {
     font-size: 8px;
-    @apply font-chicago;
+    @apply h-full w-full font-chicago;
 }
