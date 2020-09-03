@@ -7,6 +7,20 @@ font-weight: normal;
 src: local('Chicago Plain'), url('/fonts/chikarego2-webfont.ed446049.woff2') format('woff2');
 }
 
+@font-face {
+font-family: 'Arial';
+font-style: normal;
+font-weight: normal;
+src: local('Arial'), url('/fonts/PixelArial11.b60fa916.woff2') format('woff2');
+}
+
+@font-face {
+font-family: 'Perfect';
+font-style: normal;
+font-weight: normal;
+src: local('Perfect'), url('/fonts/PerfectDOSVGA437.f5cab0b9.woff2') format('woff2');
+}
+
 body {
     font-size: 8px;
     @apply font-chicago;
