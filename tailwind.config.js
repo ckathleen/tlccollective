@@ -5,7 +5,11 @@
 ** Default: https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js
 */
 module.exports = {
-  theme: {},
+  theme: {
+    fontFamily: {
+      'chicago': ['Chicago Plain', 'Open Sans']
+    }
+  },
   variants: {},
   plugins: [],
   purge: {
