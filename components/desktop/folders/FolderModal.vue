@@ -1,6 +1,7 @@
 <template>
-  <div class="component-outer" ref="draggable">
-    <div class="draggable-source global-item resizable vdr no-resize">
+  <div class="component-outer">
+    <div class="draggable-source draggable global-item resizable vdr no-resize">
+      <!-- drag head  -->
       <div class="drag-head">
         <span class="icon"> </span>
         <span class="spacer">
@@ -10,7 +11,8 @@
           Modal
         </h2>
       </div>
-      asdfasdfasdf
+      <!-- body  -->
+      <div></div>
     </div>
   </div>
 </template>
@@ -27,6 +29,40 @@ export default {
 
   mounted() {
     if (process.client) {
+      const interact = require("interactjs");
+      interact(".draggable").draggable({
+        // enable inertial throwing
+        inertia: false,
+        // keep the element within the area of it's parent
+        modifiers: [
+          interact.modifiers.restrictRect({
+            restriction: "parent",
+            endOnly: true
+          })
+        ],
+        // enable autoScroll
+        autoScroll: false,
+
+        listeners: {
+          // call this function on every dragmove event
+          move: dragMoveListener,
+        }
+      });
+
+      function dragMoveListener(event) {
+        var target = event.target;
+        // keep the dragged position in the data-x/data-y attributes
+        var x = (parseFloat(target.getAttribute("data-x")) || 0) + event.dx;
+        var y = (parseFloat(target.getAttribute("data-y")) || 0) + event.dy;
+
+        // translate the element
+        target.style.webkitTransform = target.style.transform =
+          "translate(" + x + "px, " + y + "px)";
+
+        // update the posiion attributes
+        target.setAttribute("data-x", x);
+        target.setAttribute("data-y", y);
+      }
     }
   }
 };
@@ -61,6 +97,8 @@ export default {
   transition-delay: 0.1s;
   touch-action: none;
   position: absolute;
+  top: 100px;
+  left: 140px;
 }
 .drag-head {
   display: flex;
