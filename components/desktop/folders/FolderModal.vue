@@ -1,8 +1,14 @@
 <template>
-  <div class="component-outer">
-    <div class="global-item draggable resizable vdr no-resize">
+  <div class="component-outer" ref="draggable">
+    <div class="draggable-source global-item resizable vdr no-resize">
       <div class="drag-head">
         <span class="icon"> </span>
+        <span class="spacer">
+          <i v-for="i in 6" :key="i"></i>
+        </span>
+        <h2>
+          Modal
+        </h2>
       </div>
       asdfasdfasdf
     </div>
@@ -11,7 +17,18 @@
 
 <script>
 export default {
-  name: "FolderModal"
+  name: "FolderModal",
+
+  data() {
+    return {
+      draggable: null
+    };
+  },
+
+  mounted() {
+    if (process.client) {
+    }
+  }
 };
 </script>
 
@@ -43,6 +60,7 @@ export default {
   height: 220px;
   transition-delay: 0.1s;
   touch-action: none;
+  position: absolute;
 }
 .drag-head {
   display: flex;
@@ -73,5 +91,24 @@ export default {
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqAQMAAAD/DVsYAAAABlBMVEUAAAAAAAClZ7nPAAAAAXRSTlMAQObYZgAAACZJREFUGNNj+A8CB/BS7A9AiBiKQb7xBwNxFEMdwwBS8v9/kEIBAKjbSIJ+4jfQAAAAAElFTkSuQmCC)
     no-repeat 50%;
   background-size: 7px auto;
+}
+.spacer {
+  padding-left: 5px;
+  padding-right: 5px;
+  flex: 1;
+  margin: 0;
+}
+.spacer i {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #000;
+}
+.spacer i:nth-child(n + 2) {
+  margin-top: 1px;
+}
+h2 {
+  font-weight: 400;
+  font-size: 16px;
 }
 </style>
