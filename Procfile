@@ -1,1 +1,3 @@
 web: nuxt start
+heroku config:set HOST=0.0.0.0
+heroku config:set NODE_ENV=production
