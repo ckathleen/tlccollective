@@ -1,9 +1,9 @@
 <template>
-  <div class="component-outer">
+  <div v-show="isModalActive" class="component-outer">
     <div class="draggable-source draggable global-item resizable vdr no-resize">
       <!-- drag head  -->
       <div class="drag-head">
-        <span class="icon"> </span>
+        <span class="icon" @click="closeModal"> </span>
         <span class="spacer">
           <i v-for="i in 6" :key="i"></i>
         </span>
@@ -12,12 +12,20 @@
         </h2>
       </div>
       <!-- body  -->
-      <div></div>
+      <div class="body">
+        <component :is="currentContent"></component>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+import FolderContentAbout from './content/About';
+import FolderContentPortfolio from './content/Portfolio';
+import FolderContentPortfolioZeta from './content/PortfolioZeta';
+import { mapState, mapMutations } from 'vuex';
+import modalContentTypes from '../../../constants/modalContentTypes';
+
 export default {
   name: "FolderModal",
 
@@ -25,6 +33,30 @@ export default {
     return {
       draggable: null
     };
+  },
+
+  computed: {
+    ...mapState(['isModalActive', 'currentActiveContent']),
+
+    currentContent() {
+      switch (this.currentActiveContent) {
+        case modalContentTypes.about:
+          return FolderContentAbout;
+          break;
+
+        case modalContentTypes.portfolio:
+          return FolderContentPortfolio;
+          break;
+
+        case modalContentTypes.zeta:
+          return FolderContentPortfolioZeta;
+          break;
+      
+        default:
+          return FolderContentAbout;
+          break;
+      }
+    }
   },
 
   mounted() {
@@ -64,6 +96,9 @@ export default {
         target.setAttribute("data-y", y);
       }
     }
+  },
+  methods: {
+    ...mapMutations(['closeModal'])
   }
 };
 </script>
@@ -92,8 +127,8 @@ export default {
   transition: background 0.01s ease-in-out;
   user-select: auto;
   background: rgb(181, 229, 229);
-  width: 281px;
-  height: 220px;
+  width: 500px;
+  height: 400px;
   transition-delay: 0.1s;
   touch-action: none;
   position: absolute;
@@ -148,5 +183,9 @@ export default {
 h2 {
   font-weight: 400;
   font-size: 16px;
+}
+.body {
+  padding: 0.4rem;
+  font-size: 0.8rem;
 }
 </style>

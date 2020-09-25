@@ -2,6 +2,7 @@
   <div
     class="flex flex-col items-center text-center cursor-pointer"
     style="width: 76px; height: 70px;"
+    @click="$emit('click')"
   >
     <!-- icon  -->
     <div class="flex justify-center items-center mb-2">
@@ -16,7 +17,7 @@
 
 <script>
 export default {
-  name: "DesktopFolderIcon",
+  name: "DesktopFoldersElement",
 
   props: {
     icon: {
