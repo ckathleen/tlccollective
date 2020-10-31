@@ -26,7 +26,19 @@ export default {
           icon: '/imgs/directory_closed-4.png'
         },
         {
-          name: modalContentTypes.water,
+          name: modalContentTypes.watershed,
+          icon: '/imgs/directory_closed-4.png'
+        },
+        {
+          name: modalContentTypes.selectstar,
+          icon: '/imgs/directory_closed-4.png'
+        },
+        {
+          name: modalContentTypes.clubhouse,
+          icon: '/imgs/directory_closed-4.png'
+        },
+        {
+          name: modalContentTypes.friday,
           icon: '/imgs/directory_closed-4.png'
         },
       ]

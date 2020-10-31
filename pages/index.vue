@@ -1,5 +1,9 @@
 <template>
   <div class="flex flex-col flex-grow relative">
+    <!-- attempt at loading screen -->
+
+    <!-- attempt at loading screen -->
+    
     <the-desktop />
     <desktop-folders />
     <folder-modal />

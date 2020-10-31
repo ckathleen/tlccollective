@@ -2,5 +2,11 @@ export default {
     about: 'About',
     portfolio: 'Portfolio',
     zeta: 'Zeta',
-    water: 'Water'
+    watershed: 'Watershed',
+    terminal: 'Terminal',
+    team: 'Team',
+    clubhouse: 'Clubhouse',
+    selectstar: 'SelectStar',
+    friday: 'Friday',
+    extra: 'Extra',
 }

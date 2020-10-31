@@ -23,26 +23,26 @@ export default {
       folders: [
         {
           name: modalContentTypes.about,
-          icon: '/imgs/directory_closed-4.png'
+          icon: '/imgs/txt.png'
         },
         {
           name: modalContentTypes.portfolio,
           icon: '/imgs/directory_closed-4.png'
         },
         {
-          name: modalContentTypes.about,
+          name: modalContentTypes.team,
+          icon: '/imgs/txt.png'
+        },
+        {
+          name: modalContentTypes.terminal,
+          icon: '/imgs/terminal.png'
+        },
+        {
+          name: modalContentTypes.extra,
           icon: '/imgs/directory_closed-4.png'
         },
         {
-          name: modalContentTypes.about,
-          icon: '/imgs/directory_closed-4.png'
-        },
-        {
-          name: modalContentTypes.about,
-          icon: '/imgs/directory_closed-4.png'
-        },
-        {
-          name: modalContentTypes.about,
+          name: modalContentTypes.extra,
           icon: '/imgs/directory_closed-4.png'
         },
       ]

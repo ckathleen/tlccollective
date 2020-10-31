@@ -23,6 +23,12 @@
 import FolderContentAbout from './content/About';
 import FolderContentPortfolio from './content/Portfolio';
 import FolderContentPortfolioZeta from './content/PortfolioZeta';
+import FolderContentPortfolioWatershed from './content/PortfolioWatershed';
+import FolderContentPortfolioSelectStar from './content/PortfolioSelectStar';
+import FolderContentPortfolioClubhouse from './content/PortfolioClubhouse';
+import FolderContentPortfolioFriday from './content/PortfolioFriday';
+import FolderContentTerminal from './content/Terminal';
+import FolderContentTeam from './content/Team';
 import { mapState, mapMutations } from 'vuex';
 import modalContentTypes from '../../../constants/modalContentTypes';
 
@@ -48,10 +54,34 @@ export default {
           return FolderContentPortfolio;
           break;
 
+        case modalContentTypes.team:
+          return FolderContentTeam;
+          break;
+        
+        case modalContentTypes.terminal:
+          return FolderContentTerminal;
+          break;
+
         case modalContentTypes.zeta:
           return FolderContentPortfolioZeta;
           break;
+        
+        case modalContentTypes.watershed:
+          return FolderContentPortfolioWatershed;
+          break;
       
+        case modalContentTypes.selectstar:
+          return FolderContentPortfolioSelectStar;
+          break;
+
+        case modalContentTypes.clubhouse:
+          return FolderContentPortfolioClubhouse;
+          break;
+        
+        case modalContentTypes.friday:
+          return FolderContentPortfolioFriday;
+          break;
+        
         default:
           return FolderContentAbout;
           break;
