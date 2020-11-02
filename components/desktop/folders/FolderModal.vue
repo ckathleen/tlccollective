@@ -30,6 +30,7 @@ import FolderContentPortfolioFriday from './content/PortfolioFriday';
 import FolderContentTerminal from './content/Terminal';
 import FolderContentBlog from './content/Blog';
 import FolderContentTeam from './content/Team';
+import FolderContentContact from './content/Contact';
 import { mapState, mapMutations } from 'vuex';
 import modalContentTypes from '../../../constants/modalContentTypes';
 
@@ -68,7 +69,7 @@ export default {
           break;
          
         case modalContentTypes.contact:
-          return FolderContentAbout;
+          return FolderContentContact;
           break;
 
         case modalContentTypes.zeta:

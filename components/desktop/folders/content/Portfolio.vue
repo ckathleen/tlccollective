@@ -23,23 +23,23 @@ export default {
       folders: [
         {
           name: modalContentTypes.zeta,
-          icon: '/imgs/directory_closed-4.png'
+          icon: '/imgs/macfolder.png'
         },
         {
           name: modalContentTypes.watershed,
-          icon: '/imgs/directory_closed-4.png'
+          icon: '/imgs/macfolder.png'
         },
         {
           name: modalContentTypes.selectstar,
-          icon: '/imgs/directory_closed-4.png'
+          icon: '/imgs/macfolder.png'
         },
         {
           name: modalContentTypes.clubhouse,
-          icon: '/imgs/directory_closed-4.png'
+          icon: '/imgs/macfolder.png'
         },
         {
           name: modalContentTypes.friday,
-          icon: '/imgs/directory_closed-4.png'
+          icon: '/imgs/macfolder.png'
         },
       ]
     }
