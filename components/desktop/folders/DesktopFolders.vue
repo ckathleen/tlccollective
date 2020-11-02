@@ -35,7 +35,7 @@ export default {
         },
         {
           name: modalContentTypes.terminal,
-          icon: '/imgs/oldmac.png'
+          icon: '/imgs/zoc.png'
         },
         {
           name: modalContentTypes.blog,
