@@ -1,7 +1,18 @@
 <template>
-    <div>
-        <!-- zeta memo content here: not sure if i should be using iframe -->
-            <iframe src="https://docs.google.com/document/d/e/2PACX-1vT5esTdqxfErzPLP8CXlQp88o51e7EIEYV37h-7-KV2EKUA9eXO5H9gIXJZunVrbBvBU-VjMN5zZ3Vd/pub?embedded=true"></iframe>
+    <div class="about">
+        <b>Select Star [data is inevitable]</b></br>
+        From: Lauren Stephanian</br>
+        To:	TLC Investment Committee</br>
+        Date: June 5th, 2020</br>
+        Re:	Select Star</br>
+        Note: This is a public-facing document with some information redacted.</br>
+        </br>
+        --> <u>Deal Summary:</u></br>
+        --> <u>Team:</u></br>
+        --> <u>Product:</u></br>
+        --> <u>Diligence Conversations:</u></br>
+        --> <u>Recommendation:</u> <b>TLC to invest into SelectStar!</b></br>
+
     </div>
 </template>
 

@@ -28,6 +28,7 @@ import FolderContentPortfolioSelectStar from './content/PortfolioSelectStar';
 import FolderContentPortfolioClubhouse from './content/PortfolioClubhouse';
 import FolderContentPortfolioFriday from './content/PortfolioFriday';
 import FolderContentTerminal from './content/Terminal';
+import FolderContentBlog from './content/Blog';
 import FolderContentTeam from './content/Team';
 import { mapState, mapMutations } from 'vuex';
 import modalContentTypes from '../../../constants/modalContentTypes';
@@ -60,6 +61,14 @@ export default {
         
         case modalContentTypes.terminal:
           return FolderContentTerminal;
+          break;
+        
+        case modalContentTypes.blog:
+          return FolderContentBlog;
+          break;
+         
+        case modalContentTypes.contact:
+          return FolderContentAbout;
           break;
 
         case modalContentTypes.zeta:

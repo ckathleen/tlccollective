@@ -23,27 +23,27 @@ export default {
       folders: [
         {
           name: modalContentTypes.about,
-          icon: '/imgs/txt.png'
+          icon: '/imgs/aboutfile.png'
         },
         {
           name: modalContentTypes.portfolio,
-          icon: '/imgs/directory_closed-4.png'
+          icon: '/imgs/macfolder.png'
         },
         {
           name: modalContentTypes.team,
-          icon: '/imgs/txt.png'
+          icon: '/imgs/flowerfolder.png'
         },
         {
           name: modalContentTypes.terminal,
-          icon: '/imgs/terminal.png'
+          icon: '/imgs/oldmac.png'
         },
         {
-          name: modalContentTypes.extra,
-          icon: '/imgs/directory_closed-4.png'
+          name: modalContentTypes.blog,
+          icon: '/imgs/internetfolder.png'
         },
         {
-          name: modalContentTypes.extra,
-          icon: '/imgs/directory_closed-4.png'
+          name: modalContentTypes.contact,
+          icon: '/imgs/email.png'
         },
       ]
     }
