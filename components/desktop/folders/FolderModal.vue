@@ -8,7 +8,8 @@
           <i v-for="i in 6" :key="i"></i>
         </span>
         <h2>
-          Modal
+          <!-- this is name of modal - need to make this dynamic -->
+          Modal Name
         </h2>
       </div>
       <!-- body  -->

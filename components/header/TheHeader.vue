@@ -2,7 +2,13 @@
   <header class="the-header">
     <ul class="flex items-center">
       <li class="the-header__li">
-        <span>TLC</span>
+        <!-- desktop name (top left of screen) want to make "About" clickable -->
+        <!-- would also be cool to show current time right justified -->
+        <span>
+          TLC Collective
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>A</u>bout 
+        </span>
+        
       </li>
     </ul>
   </header>

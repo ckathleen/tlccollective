@@ -26,13 +26,14 @@ export default {
           icon: '/imgs/aboutfile.png'
         },
         {
-          name: modalContentTypes.portfolio,
-          icon: '/imgs/macfolder.png'
-        },
-        {
           name: modalContentTypes.team,
           icon: '/imgs/flowerfolder.png'
         },
+        {
+          name: modalContentTypes.portfolio,
+          icon: '/imgs/macfolder.png'
+        },
+
         {
           name: modalContentTypes.terminal,
           icon: '/imgs/zoc.png'
