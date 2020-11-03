@@ -3,13 +3,16 @@
     <ul class="flex items-center">
       <li class="the-header__li">
         <!-- desktop name (top left of screen) want to make "About" clickable -->
-        <!-- would also be cool to show current time right justified -->
         <span>
           TLC Collective
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>A</u>bout 
         </span>
-        
+
       </li>
+    </ul>
+    <ul class="datetime">
+    <!-- display actual date and time -->
+    | 10:45 PM
     </ul>
   </header>
 </template>
@@ -36,4 +39,12 @@ export default {
   user-select: none;
   @apply flex items-center justify-center text-base;
 }
+.datetime {
+  text-align: right;
+  padding: 0 0.35rem;
+  height: 20px;
+  user-select: none;
+  @apply flex items-center justify-center text-base;
+} 
+
 </style>
