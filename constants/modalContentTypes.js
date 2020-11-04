@@ -1,5 +1,6 @@
 export default {
     about: 'About',
+    mailinglist: 'Mailing List',
     blog: 'Our Blog',
     terminal: 'Terminal',
     team: 'Team',

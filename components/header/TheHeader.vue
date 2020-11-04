@@ -5,14 +5,14 @@
         <!-- desktop name (top left of screen) want to make "About" clickable -->
         <span>
           TLC Collective
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>A</u>bout 
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>A</u>bout
         </span>
 
       </li>
     </ul>
     <ul class="datetime">
-    <!-- display actual date and time -->
-    | 10:45 PM
+    <!-- display actual date and time, make mailing list clickable -->
+    |&nbsp;&nbsp;<u>J</u>oin our Mailing List&nbsp;&nbsp;|&nbsp;&nbsp;10:45 PM
     </ul>
   </header>
 </template>

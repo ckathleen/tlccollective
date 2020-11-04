@@ -9,6 +9,7 @@
         </span>
         <h2>
           <!-- this is name of modal - need to make this dynamic -->
+          <!--<component :is="modalName"></component>-->
           Modal Name
         </h2>
       </div>
@@ -30,6 +31,7 @@ import FolderContentPortfolioClubhouse from './content/PortfolioClubhouse';
 import FolderContentPortfolioFriday from './content/PortfolioFriday';
 import FolderContentTerminal from './content/Terminal';
 import FolderContentBlog from './content/Blog';
+import FolderContentMailingList from './content/MailingList';
 import FolderContentTeam from './content/Team';
 import FolderContentContact from './content/Contact';
 import { mapState, mapMutations } from 'vuex';
@@ -91,6 +93,10 @@ export default {
         
         case modalContentTypes.friday:
           return FolderContentPortfolioFriday;
+          break;
+        
+        case modalContentTypes.mailinglist:
+          return FolderContentMailingList;
           break;
         
         default:
