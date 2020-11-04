@@ -1,18 +1,6 @@
 <template>
     <div class="about">
-        <b>Select Star [data is inevitable]</b></br>
-        From: Lauren Stephanian</br>
-        To:	TLC Investment Committee</br>
-        Date: June 5th, 2020</br>
-        Re:	Select Star</br>
-        Note: This is a public-facing document with some information redacted.</br>
-        </br>
-        --> <u>Deal Summary:</u></br>
-        --> <u>Team:</u></br>
-        --> <u>Product:</u></br>
-        --> <u>Diligence Conversations:</u></br>
-        --> <u>Recommendation:</u> <b>TLC to invest into SelectStar!</b></br>
-
+        <iframe src="https://docs.google.com/document/d/e/2PACX-1vRqKCER5hBR7RsMEJuPqi0msXISZmTJlvoDPbDSOeA6bXRf4EDMHF5E42s4ErOhfP-zTzz2QW7JKLd1/pub?embedded=true" width="487" and height="360"></iframe>
     </div>
 </template>
 
