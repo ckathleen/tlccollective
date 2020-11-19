@@ -2,8 +2,8 @@
   <div class="flex flex-col flex-grow relative">
     <!-- attempt at loading screen here -->
     <the-desktop />
-    <desktop-folders />
-    <folder-modal />
+    <desktop-folders @openModal="openModal($event)" />
+    <folder-modal :modal-name="folderName" />
   </div>
 </template>
 
@@ -17,6 +17,16 @@ export default {
     TheDesktop,
     DesktopFolders,
     FolderModal
+  },
+  data() {
+    return{
+      folderName: null
+    };    
+  },
+  methods: {
+    openModal(folderName){
+      this.folderName = folderName
+    }
   }
 }
 </script>

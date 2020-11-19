@@ -7,10 +7,10 @@
         <span class="spacer">
           <i v-for="i in 6" :key="i"></i>
         </span>
-        <h2>
-          <!-- this is name of modal - need to make this dynamic -->
-          <!--<component :is="modalName"></component>-->
-          Modal Name
+        <h2>   
+
+          {{this.modalName}}
+
         </h2>
       </div>
       <!-- body  -->
@@ -39,7 +39,9 @@ import modalContentTypes from '../../../constants/modalContentTypes';
 
 export default {
   name: "FolderModal",
-
+  props: {
+    modalName: null
+  },
   data() {
     return {
       draggable: null

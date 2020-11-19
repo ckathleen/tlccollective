@@ -1,7 +1,7 @@
 <template>
   <ul class="flex flex-wrap w-full max-w-md absolute top-0 left-0 z-0 mt-6">
     <li v-for="(folder, index) in folders" :key="index" class="p-2">
-      <desktop-folders-element :icon="folder.icon" :name="folder.name" @click="openModal(folder.name)"/>
+      <desktop-folders-element :icon="folder.icon" :name="folder.name" @click="clickModal(folder)"/>
     </li>
   </ul>
 </template>
@@ -51,8 +51,13 @@ export default {
   },
 
   methods: {
-    ...mapMutations(['openModal'])
+    ...mapMutations(['openModal']), 
+    clickModal(folder){
+      this.openModal(folder.name)
+      this.$emit("openModal", folder.name)
+    }
   }
+
 };
 </script>
 
