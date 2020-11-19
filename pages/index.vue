@@ -8,9 +8,9 @@
 </template>
 
 <script>
-import TheDesktop from '../components/desktop/TheDesktop';
-import DesktopFolders from '../components/desktop/folders/DesktopFolders';
-import FolderModal from '../components/desktop/folders/FolderModal';
+import TheDesktop from '../components/desktop/TheDesktop'
+import DesktopFolders from '../components/desktop/folders/DesktopFolders'
+import FolderModal from '../components/desktop/folders/FolderModal'
 
 export default {
   components: {
@@ -19,12 +19,12 @@ export default {
     FolderModal
   },
   data() {
-    return{
+    return {
       folderName: null
-    };    
+    }
   },
   methods: {
-    openModal(folderName){
+    openModal(folderName) {
       this.folderName = folderName
     }
   }

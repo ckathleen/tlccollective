@@ -1,15 +1,19 @@
 <template>
   <ul class="flex flex-wrap w-full max-w-md absolute top-0 left-0 z-0 mt-6">
     <li v-for="(folder, index) in folders" :key="index" class="p-2">
-      <desktop-folders-element :icon="folder.icon" :name="folder.name" @click="clickModal(folder)"/>
+      <desktop-folders-element
+        :icon="folder.icon"
+        :name="folder.name"
+        @click="clickModal(folder)"
+      />
     </li>
   </ul>
 </template>
 
 <script>
-import { mapMutations } from 'vuex';
-import DesktopFoldersElement from './DesktopFoldersElement';
-import modalContentTypes from '../../../constants/modalContentTypes';
+import { mapMutations } from 'vuex'
+import DesktopFoldersElement from './DesktopFoldersElement'
+import modalContentTypes from '../../../constants/modalContentTypes'
 
 export default {
   name: 'DesktopFolders',
@@ -17,7 +21,7 @@ export default {
   components: {
     DesktopFoldersElement
   },
-  
+
   data() {
     return {
       folders: [
@@ -45,20 +49,19 @@ export default {
         {
           name: modalContentTypes.contact,
           icon: '/imgs/email.png'
-        },
+        }
       ]
     }
   },
 
   methods: {
-    ...mapMutations(['openModal']), 
-    clickModal(folder){
+    ...mapMutations(['openModal']),
+    clickModal(folder) {
       this.openModal(folder.name)
-      this.$emit("openModal", folder.name)
+      this.$emit('openModal', folder.name)
     }
   }
-
-};
+}
 </script>
 
 <style lang="scss" scoped></style>

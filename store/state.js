@@ -1,4 +1,4 @@
 export default () => ({
-    isModalActive: false,
-    currentActiveContent: ''
-});
+  isModalActive: false,
+  currentActiveContent: ''
+})

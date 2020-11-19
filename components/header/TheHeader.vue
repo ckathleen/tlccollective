@@ -4,23 +4,21 @@
       <li class="the-header__li">
         <!-- desktop name (top left of screen) want to make "About" clickable -->
         <span>
-          TLC Collective
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>A</u>bout
+          TLC Collective &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>A</u>bout
         </span>
-
       </li>
     </ul>
     <ul class="datetime">
-    <!-- display actual date and time, make mailing list clickable -->
-    |&nbsp;&nbsp;<u>J</u>oin our Mailing List&nbsp;&nbsp;|&nbsp;&nbsp;10:45 PM
+      <!-- display actual date and time, make mailing list clickable -->
+      |&nbsp;&nbsp;<u>J</u>oin our Mailing List&nbsp;&nbsp;|&nbsp;&nbsp;10:45 PM
     </ul>
   </header>
 </template>
 
 <script>
 export default {
-  name: "TheHeader"
-};
+  name: 'TheHeader'
+}
 </script>
 
 <style scoped>
@@ -45,6 +43,5 @@ export default {
   height: 20px;
   user-select: none;
   @apply flex items-center justify-center text-base;
-} 
-
+}
 </style>
