@@ -34,9 +34,11 @@
           >Lauren Stephanian</a
         ></u
       >
-      is a principal at Pantera Capital and has a BS in computer science. She
-      loves all things fintech and beauty. Lauren is currently getting certified
-      in penetration testing for fun (yes, seriously).<br />
+      is a principal at Pantera Capital and holds a BS in computer science. 
+      Her interests include fintech, infosec, and homecooked Persian food. 
+      Outside of her job at Pantera, she is pursuing OSCP certification in 
+      penetration testing, is working with MC DAO to provide grants to innovative
+      crypto projects, and in the process of writing a cookbook.<br />
     </p>
     <br />
     <br />
@@ -60,12 +62,11 @@
       going back to school to study the brain.<br />
     </p>
     <br />
-    <br />
     <img
       src="/imgs/mac_grape.png"
       width="40"
       height="40"
-      style="display: block; margin-left: auto; margin-right: auto"
+      style="display: block; margin-left: auto; margin-right: auto;"
     />
   </div>
 </template>
