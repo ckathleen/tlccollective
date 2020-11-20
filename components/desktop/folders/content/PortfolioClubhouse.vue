@@ -1,11 +1,12 @@
 <template>
   <div class="about">
-    <iframe
+    <!--<iframe
       src="https://docs.google.com/document/d/e/2PACX-1vR3flcVH0GDEJE4U7NonIz63gMHDBoKGNf9zqgN5yjfyOcJ6ONALFhScfEQybZyGp7FUxx96xxwnH4h/pub?embedded=true"
       width="487"
       and
       height="360"
-    ></iframe>
+    ></iframe>-->
+    Unfortunately there is no memo available for this investment. 
   </div>
 </template>
 

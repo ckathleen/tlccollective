@@ -174,8 +174,8 @@ export default {
   transition: background 0.01s ease-in-out;
   user-select: auto;
   background: rgb(181, 229, 229);
-  width: 50vw;
-  height: 60vh;
+  width: 60vw;
+  height: 70vh;
   transition-delay: 0.1s;
   touch-action: none;
   position: absolute;
@@ -233,6 +233,6 @@ h2 {
 }
 .body {
   padding: 1rem;
-  font-size: 0.8rem;
+  font-size: .9rem;
 }
 </style>
