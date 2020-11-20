@@ -10,8 +10,7 @@
   },
   "dependencies": {
     "interactjs": "^1.9.22",
-    "nuxt": "^2.14.0",
-    "prettier": "^2.1.2"
+    "nuxt": "^2.14.0"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^2.1.0",
