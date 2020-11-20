@@ -175,7 +175,7 @@ export default {
   user-select: auto;
   background: rgb(181, 229, 229);
   width: 60vw;
-  height: 70vh;
+  height: 75vh;
   transition-delay: 0.1s;
   touch-action: none;
   position: absolute;

@@ -33,13 +33,14 @@ export default {
     position: relative;
     overflow: hidden;
     padding-top: 85.71%;
+    height: 66vh;
 }
 .resp-iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 120%;
+    height: 100%;
     border: 0;
 }
 </style>
