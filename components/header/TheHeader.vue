@@ -10,14 +10,55 @@
     </ul>
     <ul class="datetime">
       <!-- display actual date and time, make mailing list clickable -->
-      |&nbsp;&nbsp;<u>J</u>oin our Mailing List&nbsp;&nbsp;|&nbsp;&nbsp;10:45 PM
+      |&nbsp;&nbsp;<u>J</u>oin our Mailing List&nbsp;&nbsp;|&nbsp;&nbsp;
+      <span id="clock">&nbsp;</span>
     </ul>
   </header>
 </template>
 
 <script>
 export default {
-  name: 'TheHeader'
+  name: 'TheHeader',
+  mounted() {
+    var that = this
+    setInterval(function () {
+      that.updateClock()
+    }, 1000)
+  },
+  methods: {
+    updateClock() {
+      let currentTime = new Date()
+      let currentHours = currentTime.getHours()
+      let currentMinutes = currentTime.getMinutes()
+      let currentSeconds = currentTime.getSeconds()
+
+      // Pad the minutes and seconds with leading zeros, if required
+      currentMinutes = (currentMinutes < 10 ? '0' : '') + currentMinutes
+      currentSeconds = (currentSeconds < 10 ? '0' : '') + currentSeconds
+
+      // Choose either "AM" or "PM" as appropriate
+      var timeOfDay = currentHours < 12 ? 'AM' : 'PM'
+
+      // Convert the hours component to 12-hour format if needed
+      currentHours = currentHours > 12 ? currentHours - 12 : currentHours
+
+      // Convert an hours component of "0" to "12"
+      currentHours = currentHours == 0 ? 12 : currentHours
+
+      // Compose the string for display
+      var currentTimeString =
+        currentHours +
+        ':' +
+        currentMinutes +
+        ':' +
+        currentSeconds +
+        ' ' +
+        timeOfDay
+
+      // Update the time display
+      document.getElementById('clock').firstChild.nodeValue = currentTimeString
+    }
+  }
 }
 </script>
 
