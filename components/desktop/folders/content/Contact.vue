@@ -6,13 +6,7 @@
     >.
     <br />
     <br />
-    Alternatively, you can always send us a DM:<br />
-    -->
-    <u
-      ><a href="https://twitter.com/tlc_collective" target="_blank"
-        >TLC Team</a
-      ></u
-    ><br />
+    Alternatively, you can always send us a DM:<br />    
     -->
     <u
       ><a href="https://twitter.com/tcburning" target="_blank"
@@ -31,20 +25,17 @@
         >Casey Caruso</a
       ></u
     >
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
     <img
+      class="at-sign"
       src="/gifs/atemail.gif"
       width="30"
       height="30"
-      style="display: block; margin-left: auto; margin-right: auto"
+
     />
   </div>
 </template>
@@ -54,3 +45,9 @@ export default {
   name: 'FolderContentContact'
 }
 </script>
+<style scoped>
+.at-sign{
+  position: absolute;
+  right: 45%;
+}
+</style>
