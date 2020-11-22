@@ -8,18 +8,19 @@
     closely with founding teams.<br />
     <br />
     <br />
-    You can see news and announcements on our official
-    <u
-      ><a href="https://twitter.com/tlc_collective" target="_blank"
-        >twitter</a
-      ></u
-    >
-    or by joining our mailing list:<br />
+    Stay up to date by joining our mailing list:<br />
     <br />
-    <form id="emailsubmit">
-      <input type="text" id="email" name="email" value=" email" />&nbsp;&nbsp;
+    <form method="post"
+      id="sheetdb-form"
+      action="https://sheetdb.io/api/v1/1v9c4d9llys1g"
+    >
+      <input type="text" id="email" name="data[email]" value=" " />&nbsp;&nbsp;
       <input type="submit" value="Submit" />
     </form>
+    <!--emails stored here: 
+    https://docs.google.com/spreadsheets/d/1cyvjK3ujMFTzQ4vzsla6yCLuCR6GBK4MM8_rg25d8Hc/edit?usp=sharing
+    -->
+
     <br />
     <br />
   </div>
@@ -29,4 +30,23 @@
 export default {
   name: 'FolderContentAbout'
 }
+
+  /*
+  on submit do ajax call
+
+  var form = document.getElementById('sheetdb-form');
+  form.addEventListener("submit", e => {
+    e.preventDefault();
+    fetch(form.action, {
+        method : "POST",
+        body: new FormData(document.getElementById("sheetdb-form")),
+    }).then(
+        response => response.json()
+    ).then((html) => {
+      // you can put any JS code here
+      alert('success')
+    });
+  });
+  */
+
 </script>
