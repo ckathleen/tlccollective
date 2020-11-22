@@ -6,7 +6,7 @@
       and
       height="360"
     ></iframe>-->
-    Unfortunately there is no memo available for this investment. 
+    We don't have a public  memo available for this investment! But check out <a href=#>this</a> dreamy music vid.
   </div>
 </template>
 
