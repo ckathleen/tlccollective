@@ -174,8 +174,7 @@ export default {
   transition: background 0.01s ease-in-out;
   user-select: auto;
   background: rgb(181, 229, 229);
-  width: 60vw;
-  height: 75vh;
+  width: 45vw;
   transition-delay: 0.1s;
   touch-action: none;
   position: absolute;

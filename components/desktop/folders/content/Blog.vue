@@ -33,7 +33,6 @@ export default {
     position: relative;
     overflow: hidden;
     padding-top: 85.71%;
-    height: 66vh;
 }
 .resp-iframe {
     position: absolute;
