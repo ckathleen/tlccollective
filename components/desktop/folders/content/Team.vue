@@ -37,8 +37,8 @@
       is a principal at Pantera Capital and holds a BS in computer science. 
       Her interests include fintech, infosec, and homecooked Persian food. 
       Outside of her job at Pantera, she is pursuing OSCP certification in 
-      penetration testing, is working with MC DAO to provide grants to innovative
-      crypto projects, and in the process of writing a cookbook.<br />
+      penetration testing and working with a DAO to provide grant funding to 
+      innovative crypto projects.<br />
     </p>
     <br />
     <br />
