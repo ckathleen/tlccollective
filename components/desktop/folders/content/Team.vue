@@ -38,7 +38,7 @@
       Her interests include fintech, infosec, and homecooked Persian food. 
       Outside of her job at Pantera, she is pursuing OSCP certification in 
       penetration testing and working with a DAO to provide grant funding to 
-      innovative crypto projects.<br />
+      innovative projects in the digital asset space.<br />
     </p>
     <br />
     <br />
@@ -57,7 +57,7 @@
         ></u
       >
       is an engineer at Google and a part time investor at Bessemer. She holds
-      her BS in computer engieering and her MS in computer science. she gets
+      her BS in computer engieering and her MS in computer science. She gets
       excited about artificial intelligence and consciousness, and is currently
       going back to school to study the brain.<br />
     </p>
