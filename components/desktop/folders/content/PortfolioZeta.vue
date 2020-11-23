@@ -1,8 +1,9 @@
 <template>
   <div>
-    <div class="resp-container">
+    More information coming soon.
+    <!--<div class="resp-container">
       <iframe class="resp-iframe" src="https://docs.google.com/document/d/e/2PACX-1vRqKCER5hBR7RsMEJuPqi0msXISZmTJlvoDPbDSOeA6bXRf4EDMHF5E42s4ErOhfP-zTzz2QW7JKLd1/pub?embedded=true" gesture="media"  allow="encrypted-media" allowfullscreen></iframe>
-    </div>
+    </div>-->
     
   </div>
 </template>
