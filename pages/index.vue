@@ -30,3 +30,12 @@ export default {
   }
 }
 </script>
+<style>
+html,
+body {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+</style>

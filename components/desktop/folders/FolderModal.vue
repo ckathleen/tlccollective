@@ -1,6 +1,6 @@
 <template>
   <div v-show="isModalActive" class="component-outer">
-    <div class="draggable-source draggable global-item resizable vdr no-resize">
+    <div class="draggable-source draggable global-item resizable vdr">
       <!-- drag head  -->
       <div class="drag-head">
         <span class="icon" @click="closeModal"> </span>
@@ -182,6 +182,15 @@ export default {
   top: 100px;
   left: 140px;
 }
+@media only screen and (max-width: 600px) {
+  .global-item {
+    width: 100vw;
+    min-height: 100vh;
+    top: 10px;
+    left: 0px;
+  }
+}
+
 .drag-head {
   display: flex;
   align-items: center;
@@ -194,8 +203,8 @@ export default {
 .drag-head .icon {
   border: 1px solid #000;
   position: relative;
-  width: 11px;
-  height: 11px;
+  width: 15px;
+  height: 15px;
   cursor: url('/imgs/click.a54d5106.svg') 3 0, auto !important;
 }
 .drag-head .icon:active {
@@ -206,10 +215,10 @@ export default {
   top: 0;
   left: 0;
   content: ' ';
-  width: 9px;
-  height: 9px;
+  width: 10px;
+  height: 12px;
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqAQMAAAD/DVsYAAAABlBMVEUAAAAAAAClZ7nPAAAAAXRSTlMAQObYZgAAACZJREFUGNNj+A8CB/BS7A9AiBiKQb7xBwNxFEMdwwBS8v9/kEIBAKjbSIJ+4jfQAAAAAElFTkSuQmCC)
-    no-repeat 50%;
+    no-repeat 100%;
   background-size: 7px auto;
 }
 .spacer {
@@ -233,6 +242,6 @@ h2 {
 }
 .body {
   padding: 1rem;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 </style>

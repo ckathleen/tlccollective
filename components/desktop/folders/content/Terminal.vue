@@ -218,10 +218,9 @@ export default {
 #terminal .four-oh-four {
   position: relative;
   top: 0;
-  left: 0;
   min-height: 100vh;
   min-width: 100vw;
-  z-index: 2;
+  z-index: -1;
   background-color: black;
   transition: opacity 300ms ease-out;
   background-position: center center;
@@ -297,7 +296,7 @@ export default {
   opacity: 0;
   position: fixed;
   top: 0;
-  left: 0;
+  left: 50%;
 }
 
 #terminal a {

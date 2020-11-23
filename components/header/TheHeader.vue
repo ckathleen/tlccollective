@@ -3,14 +3,12 @@
     <ul class="flex items-center">
       <li class="the-header__li">
         <!-- desktop name (top left of screen) want to make "About" clickable -->
-        <span>
-          TLC Collective &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>A</u>bout
-        </span>
+        <span> TLC Collective </span>
       </li>
     </ul>
     <ul class="datetime">
       <!-- display actual date and time, make mailing list clickable -->
-      |&nbsp;&nbsp;<u>J</u>oin our Mailing List&nbsp;&nbsp;|&nbsp;&nbsp;
+      &nbsp;&nbsp;<u>J</u>oin our Mailing List&nbsp;&nbsp;|&nbsp;&nbsp;
       <span id="clock">&nbsp;</span>
     </ul>
   </header>
@@ -42,7 +40,7 @@ export default {
       // Convert the hours component to 12-hour format if needed
       currentHours = currentHours > 12 ? currentHours - 12 : currentHours
 
-      // Convert an hours component of "0" to "12"
+      // Convert an hours component of "q0" to "12"
       currentHours = currentHours == 0 ? 12 : currentHours
 
       // Compose the string for display
@@ -63,7 +61,13 @@ export default {
 </script>
 
 <style scoped>
+@media only screen and (max-width: 600px) {
+  .datetime {
+    visibility: hidden;
+  }
+}
 .the-header {
+  white-space: nowrap;
   display: flex;
   height: 20px;
   border-bottom: 1px solid #000;
