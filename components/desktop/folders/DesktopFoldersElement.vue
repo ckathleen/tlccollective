@@ -1,12 +1,12 @@
 <template>
   <div
     class="flex flex-col items-center text-center cursor-pointer"
-    style="width: 76px; height: 70px;"
+    style="width: 76px; height: 70px"
     @click="$emit('click')"
   >
     <!-- icon  -->
     <div class="flex justify-center items-center mb-2">
-      <img :src="icon" :alt="name" style="max-height: 22px; max-width: 32px;" />
+      <img :src="icon" :alt="name" style="max-height: 40px; max-width: 40px" />
     </div>
     <!-- text  -->
     <span class="folder-text">
@@ -17,7 +17,7 @@
 
 <script>
 export default {
-  name: "DesktopFoldersElement",
+  name: 'DesktopFoldersElement',
 
   props: {
     icon: {
@@ -28,8 +28,8 @@ export default {
       type: String,
       required: true
     }
-  },
-};
+  }
+}
 </script>
 
 <style scoped>

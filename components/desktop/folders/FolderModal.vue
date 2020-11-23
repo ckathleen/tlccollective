@@ -1,6 +1,6 @@
 <template>
   <div v-show="isModalActive" class="component-outer">
-    <div class="draggable-source draggable global-item resizable vdr no-resize">
+    <div class="draggable-source draggable global-item resizable vdr">
       <!-- drag head  -->
       <div class="drag-head">
         <span class="icon" @click="closeModal"> </span>
@@ -8,7 +8,7 @@
           <i v-for="i in 6" :key="i"></i>
         </span>
         <h2>
-          Modal
+          {{ this.modalName }}
         </h2>
       </div>
       <!-- body  -->
@@ -20,19 +20,30 @@
 </template>
 
 <script>
-import FolderContentAbout from './content/About';
-import FolderContentPortfolio from './content/Portfolio';
-import FolderContentPortfolioZeta from './content/PortfolioZeta';
-import { mapState, mapMutations } from 'vuex';
-import modalContentTypes from '../../../constants/modalContentTypes';
+import FolderContentAbout from './content/About'
+import FolderContentPortfolio from './content/Portfolio'
+import FolderContentPortfolioZeta from './content/PortfolioZeta'
+import FolderContentPortfolioWatershed from './content/PortfolioWatershed'
+import FolderContentPortfolioSelectStar from './content/PortfolioSelectStar'
+import FolderContentPortfolioClubhouse from './content/PortfolioClubhouse'
+import FolderContentPortfolioFriday from './content/PortfolioFriday'
+import FolderContentTerminal from './content/Terminal'
+import FolderContentBlog from './content/Blog'
+import FolderContentMailingList from './content/MailingList'
+import FolderContentTeam from './content/Team'
+import FolderContentContact from './content/Contact'
+import { mapState, mapMutations } from 'vuex'
+import modalContentTypes from '../../../constants/modalContentTypes'
 
 export default {
-  name: "FolderModal",
-
+  name: 'FolderModal',
+  props: {
+    modalName: null
+  },
   data() {
     return {
       draggable: null
-    };
+    }
   },
 
   computed: {
@@ -41,34 +52,70 @@ export default {
     currentContent() {
       switch (this.currentActiveContent) {
         case modalContentTypes.about:
-          return FolderContentAbout;
-          break;
+          return FolderContentAbout
+          break
 
         case modalContentTypes.portfolio:
-          return FolderContentPortfolio;
-          break;
+          return FolderContentPortfolio
+          break
+
+        case modalContentTypes.team:
+          return FolderContentTeam
+          break
+
+        case modalContentTypes.terminal:
+          return FolderContentTerminal
+          break
+
+        case modalContentTypes.blog:
+          return FolderContentBlog
+          break
+
+        case modalContentTypes.contact:
+          return FolderContentContact
+          break
 
         case modalContentTypes.zeta:
-          return FolderContentPortfolioZeta;
-          break;
-      
+          return FolderContentPortfolioZeta
+          break
+
+        case modalContentTypes.watershed:
+          return FolderContentPortfolioWatershed
+          break
+
+        case modalContentTypes.selectstar:
+          return FolderContentPortfolioSelectStar
+          break
+
+        case modalContentTypes.clubhouse:
+          return FolderContentPortfolioClubhouse
+          break
+
+        case modalContentTypes.friday:
+          return FolderContentPortfolioFriday
+          break
+
+        case modalContentTypes.mailinglist:
+          return FolderContentMailingList
+          break
+
         default:
-          return FolderContentAbout;
-          break;
+          return FolderContentAbout
+          break
       }
     }
   },
 
   mounted() {
     if (process.client) {
-      const interact = require("interactjs");
-      interact(".draggable").draggable({
+      const interact = require('interactjs')
+      interact('.draggable').draggable({
         // enable inertial throwing
         inertia: false,
         // keep the element within the area of it's parent
         modifiers: [
           interact.modifiers.restrictRect({
-            restriction: "parent",
+            restriction: 'parent',
             endOnly: true
           })
         ],
@@ -77,30 +124,30 @@ export default {
 
         listeners: {
           // call this function on every dragmove event
-          move: dragMoveListener,
+          move: dragMoveListener
         }
-      });
+      })
 
       function dragMoveListener(event) {
-        var target = event.target;
+        var target = event.target
         // keep the dragged position in the data-x/data-y attributes
-        var x = (parseFloat(target.getAttribute("data-x")) || 0) + event.dx;
-        var y = (parseFloat(target.getAttribute("data-y")) || 0) + event.dy;
+        var x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx
+        var y = (parseFloat(target.getAttribute('data-y')) || 0) + event.dy
 
         // translate the element
         target.style.webkitTransform = target.style.transform =
-          "translate(" + x + "px, " + y + "px)";
+          'translate(' + x + 'px, ' + y + 'px)'
 
         // update the posiion attributes
-        target.setAttribute("data-x", x);
-        target.setAttribute("data-y", y);
+        target.setAttribute('data-x', x)
+        target.setAttribute('data-y', y)
       }
     }
   },
   methods: {
     ...mapMutations(['closeModal'])
   }
-};
+}
 </script>
 
 <style scoped>
@@ -127,14 +174,23 @@ export default {
   transition: background 0.01s ease-in-out;
   user-select: auto;
   background: rgb(181, 229, 229);
-  width: 500px;
-  height: 400px;
+  width: 45vw;
+  min-height: 40vh;
   transition-delay: 0.1s;
   touch-action: none;
   position: absolute;
   top: 100px;
   left: 140px;
 }
+@media only screen and (max-width: 600px) {
+  .global-item {
+    width: 100vw;
+    min-height: 100vh;
+    top: 10px;
+    left: 0px;
+  }
+}
+
 .drag-head {
   display: flex;
   align-items: center;
@@ -142,14 +198,14 @@ export default {
   height: 21px;
   width: 100%;
   user-select: none;
-  cursor: url("/imgs/grab.4f3c4e6a.svg"), auto !important;
+  cursor: url('/imgs/grab.4f3c4e6a.svg'), auto !important;
 }
 .drag-head .icon {
   border: 1px solid #000;
   position: relative;
-  width: 11px;
-  height: 11px;
-  cursor: url("/imgs/click.a54d5106.svg") 3 0, auto !important;
+  width: 15px;
+  height: 15px;
+  cursor: url('/imgs/click.a54d5106.svg') 3 0, auto !important;
 }
 .drag-head .icon:active {
   background: #000;
@@ -158,11 +214,11 @@ export default {
   position: absolute;
   top: 0;
   left: 0;
-  content: " ";
-  width: 9px;
-  height: 9px;
+  content: ' ';
+  width: 10px;
+  height: 12px;
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqAQMAAAD/DVsYAAAABlBMVEUAAAAAAAClZ7nPAAAAAXRSTlMAQObYZgAAACZJREFUGNNj+A8CB/BS7A9AiBiKQb7xBwNxFEMdwwBS8v9/kEIBAKjbSIJ+4jfQAAAAAElFTkSuQmCC)
-    no-repeat 50%;
+    no-repeat 100%;
   background-size: 7px auto;
 }
 .spacer {
@@ -185,7 +241,7 @@ h2 {
   font-size: 16px;
 }
 .body {
-  padding: 0.4rem;
-  font-size: 0.8rem;
+  padding: 1rem;
+  font-size: 0.9rem;
 }
 </style>

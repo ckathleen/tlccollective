@@ -1,6 +1,15 @@
 export default {
-    about: 'About',
-    portfolio: 'Portfolio',
-    zeta: 'Zeta',
-    water: 'Water'
+  about: 'About',
+  mailinglist: 'Mailing List',
+  blog: 'Our Blog',
+  terminal: 'Terminal',
+  team: 'Team',
+  contact: 'Get in Touch!',
+  portfolio: 'Portfolio',
+  zeta: 'Zeta',
+  watershed: 'Watershed',
+  clubhouse: 'Clubhouse',
+  selectstar: 'SelectStar',
+  friday: 'Friday',
+  extra: 'Extra'
 }
