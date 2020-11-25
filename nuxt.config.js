@@ -41,8 +41,8 @@ export default {
    */
   components: true,
   // comment in for prod
-  serverMiddleware: ["redirect-ssl"],
-  /*
+/*   serverMiddleware: ["redirect-ssl"],
+ */  /*
    ** Nuxt.js dev-modules
    */
   buildModules: [
