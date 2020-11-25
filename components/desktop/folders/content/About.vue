@@ -41,7 +41,7 @@ export default {
       }).then(
           response => response.json()
       ).then((html) => {
-        window.location.href = 'https://tlcinvestingcollective.com';
+        window.location.href = 'https://www.tlcinvestingcollective.com';
       });
     }
   }
