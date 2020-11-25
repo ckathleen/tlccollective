@@ -30,8 +30,20 @@
 </template>
 
 <script>
+import $ from 'jquery'
+
 export default {
   name: 'FolderContentAbout',
+  mounted: function () {
+    $(document).ready(function() {
+      $(window).keydown(function(event){
+        if(event.keyCode == 13) {
+          event.preventDefault();
+          return false;
+        }
+      })
+    })
+  },
   methods: {
     submitFormData () {
       var form = document.getElementById('sheetdb-form');
@@ -41,8 +53,8 @@ export default {
       }).then(
           response => response.json()
       ).then((html) => {
-        window.location.href = 'https://www.tlcinvestingcollective.com';
-      });
+        window.location.href = 'https://www.tlcinvestingcollective.com'
+      })
     }
   }
 }
