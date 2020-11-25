@@ -13,7 +13,7 @@
     </ul>
     <!--<div class="resp-container">
       <iframe class="resp-iframe" src="https://docs.google.com/document/d/e/2PACX-1vRqKCER5hBR7RsMEJuPqi0msXISZmTJlvoDPbDSOeA6bXRf4EDMHF5E42s4ErOhfP-zTzz2QW7JKLd1/pub?embedded=true" gesture="media"  allow="encrypted-media" allowfullscreen></iframe>
-    </div>-->
+    </div> -->
     
   </div>
 </template>
@@ -38,5 +38,12 @@ export default {
     width: 100%;
     height: 120%;
     border: 0;
+}
+@media only screen and (max-width: 600px) {
+  .resp-container {
+    min-height: 90vh;
+    top: 10px;
+    left: 0px;
+  }
 }
 </style>

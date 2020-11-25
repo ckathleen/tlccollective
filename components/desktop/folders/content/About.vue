@@ -90,6 +90,5 @@ export default {
   padding: 1rem 0;
   margin-top: 1rem;
   font-size: 1.2rem;
-  color: #228B22;
 } */
 </style>

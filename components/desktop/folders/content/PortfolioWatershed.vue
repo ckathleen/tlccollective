@@ -29,4 +29,12 @@ export default {
     height: 120%;
     border: 0;
 }
+
+@media only screen and (max-width: 600px) {
+  .resp-container {
+    min-height: 90vh;
+    top: 10px;
+    left: 0px;
+  }
+}
 </style>
