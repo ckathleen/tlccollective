@@ -11,9 +11,7 @@
 import TheDesktop from '../components/desktop/TheDesktop'
 import DesktopFolders from '../components/desktop/folders/DesktopFolders'
 import FolderModal from '../components/desktop/folders/FolderModal'
-import redirectSSL from 'redirect-ssl'
 
-app.use(redirectSSL)
 
 export default {
   components: {
