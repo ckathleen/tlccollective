@@ -14,7 +14,7 @@
       <br />
       <form method="post"
         id="sheetdb-form"
-        action="https://sheetdb.io/api/v1/1v9c4d9llys1g"
+      action="https://sheetdb.io/api/v1/1v9c4d9llys1g"
       >
         <input type="text" id="email" name="data[email]" value=" " />&nbsp;&nbsp;
         <input type="submit" value="Submit" />
@@ -32,11 +32,10 @@
 export default {
   name: 'FolderContentAbout'
 }
+  
+  // on submit do ajax call
 
-  /*
-  on submit do ajax call
-
-  var form = document.getElementById('sheetdb-form');
+/*   var form = document.getElementById('sheetdb-form');
   form.addEventListener("submit", e => {
     e.preventDefault();
     fetch(form.action, {
@@ -48,8 +47,8 @@ export default {
       // you can put any JS code here
       alert('success')
     });
-  });
-  */
+  }); */
+  
 
 </script>
 <style scoped>
