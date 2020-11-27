@@ -8,7 +8,7 @@
     closely with founding teams.<br />
     <br />
     <br />
-    <div class="emailform">
+    <div class="emailform" id="emailform">
       Stay up to date by joining our mailing list:
       <br />
       <br />
@@ -36,7 +36,7 @@ export default {
   name: 'FolderContentAbout',
   mounted: function () {
     $(document).ready(function() {
-      $(window).keydown(function(event){
+      $('emailform').keydown(function(event){
         if(event.keyCode == 13) {
           event.preventDefault();
           return false;
