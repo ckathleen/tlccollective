@@ -14,9 +14,11 @@
           >Terri Burns</a
         ></u
       >
-      is a partner at GV, a certified professional coach, and has a BS in
-      computer science. She's into enterprise collab tools, along with tacos and
-      Rihanna circa 2016.<br />
+      is a partner at GV (Google Ventures). Previously, Terri  was an 
+      associate product manager at Twitter, where she worked on the home 
+      timeline team. She graduated with a degree in computer science 
+      from the NYU Courant Institute of Mathematical Sciences and loves
+      enterprise collaboration tools and tacos.<br />
     </p>
     <br />
     <br />
@@ -57,7 +59,7 @@
         ></u
       >
       is an engineer at Google and a part time investor at Bessemer. She holds
-      her BS in computer engieering and her MS in computer science. she gets
+      her BS in computer engieering and her MS in computer science. She gets
       excited about artificial intelligence and consciousness, and is currently
       going back to school to study the brain.<br />
     </p>
