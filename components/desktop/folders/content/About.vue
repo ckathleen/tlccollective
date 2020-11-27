@@ -15,6 +15,7 @@
       <form method="post"
         id="sheetdb-form"
         action="https://sheetdb.io/api/v1/1v9c4d9llys1g"
+        @submit="submitFormData"
       >
         <input type="text" id="email" name="data[email]" value=" " />&nbsp;&nbsp;
         <input type="submit" value="Submit" />
@@ -29,28 +30,34 @@
 </template>
 
 <script>
+import $ from 'jquery'
+
 export default {
-  name: 'FolderContentAbout'
-}
-
-  /*
-  on submit do ajax call
-
-  var form = document.getElementById('sheetdb-form');
-  form.addEventListener("submit", e => {
-    e.preventDefault();
-    fetch(form.action, {
+  name: 'FolderContentAbout',
+  mounted: function () {
+    $(document).ready(function() {
+      $(window).keydown(function(event){
+        if(event.keyCode == 13) {
+          event.preventDefault();
+          return false;
+        }
+      })
+    })
+  },
+  methods: {
+    submitFormData () {
+      var form = document.getElementById('sheetdb-form');
+      fetch(form.action, {
         method : "POST",
         body: new FormData(document.getElementById("sheetdb-form")),
-    }).then(
-        response => response.json()
-    ).then((html) => {
-      // you can put any JS code here
-      alert('success')
-    });
-  });
-  */
-
+      }).then(
+          response => response.json()
+      ).then((html) => {
+        window.location.href = 'https://www.tlcinvestingcollective.com'
+      })
+    }
+  }
+}
 </script>
 <style scoped>
 .emailform{

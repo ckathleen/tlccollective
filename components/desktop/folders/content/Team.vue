@@ -40,7 +40,7 @@
       Her interests include fintech, infosec, and homecooked Persian food. 
       Outside of her job at Pantera, she is pursuing OSCP certification in 
       penetration testing and working with a DAO to provide grant funding to 
-      innovative crypto projects.<br />
+      innovative projects in the digital asset space.<br />
     </p>
     <br />
     <br />

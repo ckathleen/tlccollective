@@ -12,6 +12,7 @@ import TheDesktop from '../components/desktop/TheDesktop'
 import DesktopFolders from '../components/desktop/folders/DesktopFolders'
 import FolderModal from '../components/desktop/folders/FolderModal'
 
+
 export default {
   components: {
     TheDesktop,
@@ -29,6 +30,7 @@ export default {
     }
   }
 }
+
 </script>
 <style>
 html,

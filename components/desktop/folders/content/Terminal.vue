@@ -105,7 +105,7 @@ export default {
       return o
     },
     showKittens() {
-      $('.terminal').append(
+      /*$('.terminal').append(
         "<div class='kittens'>" +
           "<p class='prompt'>	                             ,----,         ,----,                                          ,---,</p>" +
           "<p class='prompt'>       ,--.                ,/   .`|       ,/   .`|                     ,--.              ,`--.' |</p>" +
@@ -133,7 +133,53 @@ export default {
 
           textEffect($(line))
         }, index * 100)
-      })
+      }) 
+      */
+
+      /*$('.terminal').append(
+        "<div class='kittens'>" +
+          "<p class='prompt'>      |\      _,,,---,,_</p>" +
+          "<p class='prompt'>ZZZzz /,`.-'`'    -.  ;-;;,_</p>" +
+          "<p class='prompt'>     |,4-  ) )-,_. ,\ (  \`\'-\'</p>" +
+          "<p class='prompt'>    \'---\'\'(_/--\'  \`-\'\_)   </p>" +
+          "<p class='prompt'>                                                              </p>" +
+          "<p class='prompt'>                                                              </p>" +
+          "<p class='prompt'> _._     _,-\'\"\"\`-._</p>" +
+          "<p class='prompt'>(\,-.\`._,'(       |\`-/|</p>" +
+          "<p class='prompt'>    \`-.-\' \ )-\`( , o o)</p>" +
+          "<p class='prompt'>          \`-    \`_\`\"\'-</p>" +
+          "<p class='prompt'>                                                              </p>" +
+          "<p class='prompt'>                                                              </p></div>"
+          )*/
+
+        $('.terminal').append(
+        "<div class='kittens'>" +
+          "<p class='prompt'> /\\_/\\</p>" +
+          "<p class='prompt'>( o.o )</p>" +
+          "<p class='prompt'> > ^ <</p>" +
+          "<p class='prompt'>                                                              </p>" +
+          "<p class='prompt'>                                                              </p>" +
+          "<p class='prompt'>           /\\_/\\</p>" +
+          "<p class='prompt'>          ( o.o )</p>" +
+          "<p class='prompt'>           > ^ <</p>" +
+          "<p class='prompt'>                                                              </p>" +
+          "<p class='prompt'>                                                              </p>" +
+          "<p class='prompt'> /\\_/\\</p>" +
+          "<p class='prompt'>( o.o )</p>" +
+          "<p class='prompt'> > ^ <</p>" +
+          "<p class='prompt'>                                                              </p></div>"
+        )
+      
+      var lines = $('.kittens p')
+      $.each(lines, function (index, line) {
+        setTimeout(function () {
+          $(line).css({
+            opacity: 1
+          })
+
+          textEffect($(line))
+        }, index * 100)
+      }) 
 
       //$('.new-output').velocity('scroll'), { duration: 100 }
       var y = $('#terminal-window')[0].scrollHeight
@@ -160,7 +206,7 @@ export default {
         message =
           'Jk, there is not application process (that just sounds like way to much work tbh), but if you want to hit us up feel free to shoot us a note at TLCinvestments@googlegroups.com'
       } else if (val == 'kittens') {
-        message = 'Huzzzzzah Kittehs!'
+        message = 'Huzzah, kittens!'
         $('.kittens').removeClass('kittens')
       } else if (val == 'howcanibehelpful') {
         message = '😂 😂 😂'

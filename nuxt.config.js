@@ -40,6 +40,8 @@ export default {
    ** See https://nuxtjs.org/api/configuration-components
    */
   components: true,
+  // comment in for prod
+  serverMiddleware: ["redirect-ssl"],
   /*
    ** Nuxt.js dev-modules
    */
