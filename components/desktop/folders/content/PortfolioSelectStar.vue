@@ -1,7 +1,7 @@
 <template>
   <div>
   <b>ABOUT</b><br>
-  Select Star is a stealth company founded by <a href="https://twitter.com/shinjikim"><u>Shinji Kim</u></a>.
+  <a href="https://selectstar.com/"><u>Select Star</u></a> is a stealth company founded by <a href="https://twitter.com/shinjikim"><u>Shinji Kim</u></a>.
     <br/><br/>
     <b>TLC'S INVESTMENT</b><br>
     Lauren sourced this deal and we invested in June 2020.
