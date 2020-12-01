@@ -242,6 +242,6 @@ h2 {
 }
 .body {
   padding: 1rem;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 </style>
