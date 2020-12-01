@@ -1,7 +1,7 @@
 <template>
   <div>
   <b>ABOUT</b><br>
-    Friday is __ founded by __. 
+    <a href="https://www.friday.app/">Friday</a> is a remote work orchestration platform founded by <a href="https://twitter.com/lukethomas14"><u>Luke Thomas</u></a>. 
     <br/><br/>
     <b>TLC'S INVESTMENT</b><br>
     Casey sourced this deal and we invested in June 2020.

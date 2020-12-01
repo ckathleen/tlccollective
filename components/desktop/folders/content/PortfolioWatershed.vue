@@ -1,13 +1,13 @@
 <template>
   <div>
   <b>ABOUT</b><br>
-    Watershed is a Boston-based software development platform for biologists founded by Mark Kalinich
- and Jonathan Wang.<br/><br/>
+    Watershed is a Boston-based software development platform for biologists founded by <a href="https://www.linkedin.com/in/mark-kalinich/"><u>Mark Kalinich</u></a> and Jonathan Wang.<br/><br/>
     <b>TLC'S INVESTMENT</b><br>
     Casey sourced this deal and we invested in May 2020.
     <br><br>
-    <b>WATERSHED INVESTMENT MEMO</b>
-    <br/>
+    <b>WATERSHED INVESTMENT MEMO</b><br/>
+    In an effort to be transparent about our processes, we're publishing our investment memo for Watershed with permission from the founders:
+    <br><br>
     <div class="resp-container">
       <iframe class="resp-iframe" src="https://docs.google.com/document/d/e/2PACX-1vQFgZUShDRMaFEiso5VfvCqgeDaY0fhnqED7F_L9bKXFbktkCu6ENlkGdxh-S_FUAgqGme6arEe9zZw/pub?embedded=true" gesture="media"  allow="encrypted-media" allowfullscreen></iframe>
     </div>
