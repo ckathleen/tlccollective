@@ -1,7 +1,7 @@
 <template>
   <div class="about">
     <div class="emailform" id="emailform">
-      Stay up to date by joining our mailing list:
+      Join our mailing list:
       <br />
       <br />
       <form method="post"

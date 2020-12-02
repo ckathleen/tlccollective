@@ -2,7 +2,7 @@
   <div class="about">
     “TLC” is an investment collective comprised of <u>T</u>erri Burns, <u>L</u>auren
     Stephanian, and <u>C</u>asey Caruso. Given our backgrounds in computer science,
-    engineering and product, we pride ourselves in angel investing in
+    engineering, and product, we pride ourselves in angel investing in
     tech-forward founders who are building the inevitable. We write small,
     collective checks (having done a handful of investments to date) and work
     closely with founding teams.<br />
