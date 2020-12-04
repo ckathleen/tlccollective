@@ -11,7 +11,7 @@ export default {
   target: 'server',
   /*
    ** Headers of the page
-   ** See https://nuxtjs.org/api/configuration-head
+  ** See https://nuxtjs.org/api/configuration-head
    */
   head: {
     title: 'TLC Collective',
@@ -40,6 +40,8 @@ export default {
    ** See https://nuxtjs.org/api/configuration-components
    */
   components: true,
+  // comment in for prod
+  serverMiddleware: ["redirect-ssl"],
   /*
    ** Nuxt.js dev-modules
    */

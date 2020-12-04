@@ -6,7 +6,7 @@
   >
     <!-- icon  -->
     <div class="flex justify-center items-center mb-2">
-      <img :src="icon" :alt="name" style="max-height: 40px; max-width: 40px" />
+      <img :src="icon" :alt="name" style="max-height: 55px; max-width: 55px" />
     </div>
     <!-- text  -->
     <span class="folder-text">
@@ -39,7 +39,7 @@ export default {
   border: 1px solid #effbfe;
   border-color: rgb(216, 215, 231);
   font-family: Arial;
-  font-size: 11px;
+  font-size: .7rem;
   line-height: 1;
 }
 </style>

@@ -14,9 +14,11 @@
           >Terri Burns</a
         ></u
       >
-      is a partner at GV, a certified professional coach, and has a BS in
-      computer science. She's into enterprise collab tools, along with tacos and
-      Rihanna circa 2016.<br />
+      is a partner at GV (Google Ventures). Previously, Terri  was an 
+      associate product manager at Twitter, where she worked on the home 
+      timeline team. She graduated with a degree in computer science 
+      from the NYU Courant Institute of Mathematical Sciences and loves
+      enterprise collaboration tools and tacos.<br />
     </p>
     <br />
     <br />
@@ -34,11 +36,11 @@
           >Lauren Stephanian</a
         ></u
       >
-      is a principal at Pantera Capital and holds a BS in computer science. 
-      Her interests include fintech, infosec, and homecooked Persian food. 
-      Outside of her job at Pantera, she is pursuing OSCP certification in 
-      penetration testing and working with a DAO to provide grant funding to 
-      innovative crypto projects.<br />
+      is a principal at Pantera Capital. She holds a degree in computer science from Columbia 
+      University and has previously worked in both software development and finance. Outside of her 
+      job at Pantera, she is pursuing OSCP certification in penetration testing and working with 
+      an organization of builders and creators to provide grant funding to innovative projects in the 
+      web3 space. Her interests include fintech, cybersecurity, and homecooked Persian food.<br />
     </p>
     <br />
     <br />
@@ -57,7 +59,7 @@
         ></u
       >
       is an engineer at Google and a part time investor at Bessemer. She holds
-      her BS in computer engieering and her MS in computer science. she gets
+      her BS in computer engieering and her MS in computer science. She gets
       excited about artificial intelligence and consciousness, and is currently
       going back to school to study the brain.<br />
     </p>

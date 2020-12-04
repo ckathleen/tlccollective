@@ -9,9 +9,11 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "agentkeepalive": "^4.1.3",
     "interactjs": "^1.9.22",
     "jquery": "^3.5.1",
-    "nuxt": "^2.14.0"
+    "nuxt": "^2.14.0",
+    "redirect-ssl": "^2.0.0"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^2.1.0",

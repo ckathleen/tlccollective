@@ -31,6 +31,8 @@ export default {
       var href
       if (val == 'kittens') {
         that.showKittens()
+      } else if (val == 'whoarewe') {
+        that.showtlcgif()
       } else if (val == 'howcanibehelpful') {
         that.showHelpfulGif()
       } else {
@@ -39,6 +41,18 @@ export default {
     })
   },
   methods: {
+    showtlcgif() {
+      var that = this
+      $.get(
+        'https://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=tlc',
+        function (result) {
+          let gif = result.data.image_url
+          $('.terminal').append('<img class="gif" src="' + gif + '""><br>')
+        }
+      ).then(function () {
+        that.resetForm('whoarewe')
+      })
+    },
     showHelpfulGif() {
       var that = this
       $.get(
@@ -91,7 +105,7 @@ export default {
       return o
     },
     showKittens() {
-      $('.terminal').append(
+      /*$('.terminal').append(
         "<div class='kittens'>" +
           "<p class='prompt'>	                             ,----,         ,----,                                          ,---,</p>" +
           "<p class='prompt'>       ,--.                ,/   .`|       ,/   .`|                     ,--.              ,`--.' |</p>" +
@@ -119,7 +133,53 @@ export default {
 
           textEffect($(line))
         }, index * 100)
-      })
+      }) 
+      */
+
+      /*$('.terminal').append(
+        "<div class='kittens'>" +
+          "<p class='prompt'>      |\      _,,,---,,_</p>" +
+          "<p class='prompt'>ZZZzz /,`.-'`'    -.  ;-;;,_</p>" +
+          "<p class='prompt'>     |,4-  ) )-,_. ,\ (  \`\'-\'</p>" +
+          "<p class='prompt'>    \'---\'\'(_/--\'  \`-\'\_)   </p>" +
+          "<p class='prompt'>                                                              </p>" +
+          "<p class='prompt'>                                                              </p>" +
+          "<p class='prompt'> _._     _,-\'\"\"\`-._</p>" +
+          "<p class='prompt'>(\,-.\`._,'(       |\`-/|</p>" +
+          "<p class='prompt'>    \`-.-\' \ )-\`( , o o)</p>" +
+          "<p class='prompt'>          \`-    \`_\`\"\'-</p>" +
+          "<p class='prompt'>                                                              </p>" +
+          "<p class='prompt'>                                                              </p></div>"
+          )*/
+
+        $('.terminal').append(
+        "<div class='kittens'>" +
+          "<p class='prompt'> /\\_/\\</p>" +
+          "<p class='prompt'>( o.o )</p>" +
+          "<p class='prompt'> > ^ <</p>" +
+          "<p class='prompt'>                                                              </p>" +
+          "<p class='prompt'>                                                              </p>" +
+          "<p class='prompt'>           /\\_/\\</p>" +
+          "<p class='prompt'>          ( o.o )</p>" +
+          "<p class='prompt'>           > ^ <</p>" +
+          "<p class='prompt'>                                                              </p>" +
+          "<p class='prompt'>                                                              </p>" +
+          "<p class='prompt'> /\\_/\\</p>" +
+          "<p class='prompt'>( o.o )</p>" +
+          "<p class='prompt'> > ^ <</p>" +
+          "<p class='prompt'>                                                              </p></div>"
+        )
+      
+      var lines = $('.kittens p')
+      $.each(lines, function (index, line) {
+        setTimeout(function () {
+          $(line).css({
+            opacity: 1
+          })
+
+          textEffect($(line))
+        }, index * 100)
+      }) 
 
       //$('.new-output').velocity('scroll'), { duration: 100 }
       var y = $('#terminal-window')[0].scrollHeight
@@ -135,21 +195,18 @@ export default {
       } else if (val == 'pwd') {
         message = '/cool-humans/engineers/commmunities/TLC'
       } else if (val == 'whoarewe') {
-        message = `We're TLC 💫. An engineering community that invests in inevitable technologies. Our name comes from our founding members:
-        <a target="_blank" href='https://www.linkedin.com/in/tcburning'>Terri Burns</a> is a principal at GV, a certified professional coach, and has a BS in computer science. She's into enterprise collab tools, along with tacos and Rihanna, circa 2016.
-        <a target="_blank" href='https://www.linkedin.com/in/lstephanian/'>Lauren Stephanian</a> is a principal at Pantera Capital and has a BS in computer science. She loves all things fintech and beauty. Lauren currently is getting certified in penetration testing for fun (yes, seriously).
-        <a target="_blank" href='https://www.linkedin.com/in/casey-k-caruso/'>Casey Caruso</a> is an engineer at Google, and a part-time investor at Bessemer. She holds her BS in computer engineering and her MS in computer science. She gets excited about artificial intelligence and consiousness, and is currently going back to school to study the brain.`
+        message = `We're TLC 💫. An investment collective that prides ourselves in angel investing in tech-forward founders who are building the inevitable. Check out our 'About' and 'Team' folders to learn more about us.`
       } else if (val == 'whoami') {
         message =
-          "That's deep. This is just another VC website, can't go that deep. But reach out. Terri is a coach and can help you with this."
+          "That's deep. This is just another investing website... can't get that deep."
       } else if (val == 'portfolio') {
         message =
-          "Our founders include x,y,z. You can learn more about them here. <a src='www.google.com'> HERE </a> 👈"
+          "We're biased but we think we have one of the best portfolios around. Check out our 'Portfolio' folder to see for yourself. Are we missing anyone? LET US KNOW!"
       } else if (val == 'apply') {
         message =
-          'If you are an eng that wants to invest alongside other dope engineers. Reach out on Twitter (coming soon)'
+          'Jk, there is not application process (that just sounds like way to much work tbh), but if you want to hit us up feel free to shoot us a note at TLCinvestments@googlegroups.com'
       } else if (val == 'kittens') {
-        message = 'Huzzzzzah Kittehs!'
+        message = 'Huzzah, kittens!'
         $('.kittens').removeClass('kittens')
       } else if (val == 'howcanibehelpful') {
         message = '😂 😂 😂'

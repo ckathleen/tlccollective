@@ -179,13 +179,13 @@ export default {
   transition-delay: 0.1s;
   touch-action: none;
   position: absolute;
-  top: 100px;
+  top: 57px;
   left: 140px;
 }
 @media only screen and (max-width: 600px) {
   .global-item {
     width: 100vw;
-    min-height: 100vh;
+    min-height: 50vh;
     top: 10px;
     left: 0px;
   }
@@ -242,6 +242,6 @@ h2 {
 }
 .body {
   padding: 1rem;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 </style>
