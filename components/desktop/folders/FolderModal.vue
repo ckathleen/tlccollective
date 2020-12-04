@@ -185,7 +185,7 @@ export default {
 @media only screen and (max-width: 600px) {
   .global-item {
     width: 100vw;
-    min-height: 100vh;
+    min-height: 80vh;
     top: 10px;
     left: 0px;
   }
