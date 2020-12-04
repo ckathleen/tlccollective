@@ -8,13 +8,16 @@
     </ul>
     <ul class="datetime">
       <!-- display actual date and time, make mailing list clickable -->
-      &nbsp;&nbsp;<u>J</u>oin our Mailing List&nbsp;&nbsp;|&nbsp;&nbsp;
+      <span id="mailing_list" @click="joinMailingList()">
+        &nbsp;&nbsp;<u>J</u>oin our Mailing List&nbsp;&nbsp;|&nbsp;&nbsp;
+      </span>
       <span id="clock">&nbsp;</span>
     </ul>
   </header>
 </template>
 
 <script>
+import { mapMutations } from 'vuex'
 export default {
   name: 'TheHeader',
   mounted() {
@@ -24,6 +27,10 @@ export default {
     }, 1000)
   },
   methods: {
+    ...mapMutations(['openModal']),
+    joinMailingList() {
+      this.openModal('about')
+    },
     updateClock() {
       let currentTime = new Date()
       let currentHours = currentTime.getHours()
@@ -61,6 +68,9 @@ export default {
 </script>
 
 <style scoped>
+#mailing_list {
+  cursor: pointer;
+}
 @media only screen and (max-width: 600px) {
   .datetime {
     visibility: hidden;
