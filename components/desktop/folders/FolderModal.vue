@@ -179,7 +179,7 @@ export default {
   transition-delay: 0.1s;
   touch-action: none;
   position: absolute;
-  top: 100px;
+  top: 57px;
   left: 140px;
 }
 @media only screen and (max-width: 600px) {
