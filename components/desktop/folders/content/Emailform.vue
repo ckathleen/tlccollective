@@ -45,7 +45,7 @@ export default {
       }).then(
           response => response.json()
       ).then((html) => {
-        window.location.href = 'https://www.tlcinvestingcollective.com'
+        window.location.href = 'https://www.tlccollective.space'
       })
     }
   }
