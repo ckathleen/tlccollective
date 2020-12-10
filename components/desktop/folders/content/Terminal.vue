@@ -204,7 +204,7 @@ export default {
           "We're biased but we think we have one of the best portfolios around. Check out our 'Portfolio' folder to see for yourself. Are we missing anyone? LET US KNOW!"
       } else if (val == 'apply') {
         message =
-          'Jk, there is not application process (that just sounds like way to much work tbh), but if you want to hit us up feel free to shoot us a note at TLCinvestments@googlegroups.com'
+          'Jk, there is no application process (that just sounds like way too much work tbh), but if you want to hit us up feel free to shoot us a note at TLCinvestments@googlegroups.com'
       } else if (val == 'kittens') {
         message = 'Huzzah, kittens!'
         $('.kittens').removeClass('kittens')
