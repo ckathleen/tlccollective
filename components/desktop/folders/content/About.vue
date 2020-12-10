@@ -12,14 +12,24 @@
       Stay up to date by joining our mailing list:
       <br />
       <br />
-      <form method="post"
-        id="sheetdb-form"
-        action="https://sheetdb.io/api/v1/1v9c4d9llys1g"
-        @submit="submitFormData"
-      >
-        <input type="text" id="email" name="data[email]" value=" " />&nbsp;&nbsp;
-        <input type="submit" value="Submit" />
-      </form>
+       
+        <input
+          type="text"
+          id="email"
+          name="email"
+          v-model="email"
+        />&nbsp;&nbsp;
+        <input type="button" value="Submit" @click="submitFormData" />
+ 
+
+      <div v-if="successMessage" class="success_message">
+        <br/>
+        Thank you!
+      </div>
+      <div v-if="failureMessage" class="success_message">
+        <br/>
+        Thank you!
+      </div>
       <!--emails stored here: 
       https://docs.google.com/spreadsheets/d/1cyvjK3ujMFTzQ4vzsla6yCLuCR6GBK4MM8_rg25d8Hc/edit?usp=sharing
       -->
@@ -34,6 +44,13 @@ import $ from 'jquery'
 
 export default {
   name: 'FolderContentAbout',
+   data(){
+    return{
+      email: null,
+      successMessage: false,
+      failureMessage: false
+    }
+  },
   mounted: function () {
     $(document).ready(function() {
       $('emailform').keydown(function(event){
@@ -45,17 +62,30 @@ export default {
     })
   },
   methods: {
-    submitFormData () {
-      var form = document.getElementById('sheetdb-form');
-      fetch(form.action, {
-        method : "POST",
-        body: new FormData(document.getElementById("sheetdb-form")),
-      }).then(
-          response => response.json()
-      ).then((html) => {
-        window.location.href = 'https://tlccollective.space/'
+       submitFormData() {
+      const URL = "https://sheetdb.io/api/v1/1v9c4d9llys1g";
+    console.log(JSON.stringify({
+      data:{
+        enteredEmail: this.email
+      }
+      }))
+      fetch(URL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({data: {email: this.email}}),
       })
-    }
+        .then(result => result.json())
+        .then(data => {
+          this.successMessage = true;
+          console.log("SUCCESS_MESSAGE", data)
+        })
+        .catch(err => {
+          this.failureMessage = true;
+          console.log("ERROR_MESSAGE", err)
+        });
+    },
   }
 }
 </script>
