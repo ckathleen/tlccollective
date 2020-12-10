@@ -18,6 +18,7 @@
           id="email"
           name="email"
           v-model="email"
+          v-on:keyup="submitFormData"
         />&nbsp;&nbsp;
         <input type="button" value="Submit" @click="submitFormData" />
  
@@ -55,6 +56,7 @@ export default {
     $(document).ready(function() {
       $('emailform').keydown(function(event){
         if(event.keyCode == 13) {
+          alert('Enter was pressed');
           event.preventDefault();
           return false;
         }
@@ -62,9 +64,9 @@ export default {
     })
   },
   methods: {
-       submitFormData() {
+    submitFormData() {
       const URL = "https://sheetdb.io/api/v1/1v9c4d9llys1g";
-    console.log(JSON.stringify({
+      console.log(JSON.stringify({
       data:{
         enteredEmail: this.email
       }
