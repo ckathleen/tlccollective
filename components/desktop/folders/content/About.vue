@@ -18,7 +18,7 @@
           id="email"
           name="email"
           v-model="email"
-          v-on:keyup="submitFormData"
+          v-on:keyup.enter="submitFormData"
         />&nbsp;&nbsp;
         <input type="button" value="Submit" @click="submitFormData" />
  
