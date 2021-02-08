@@ -25,7 +25,7 @@
     <p align="justify">
       <a href="https://twitter.com/lstephanian" target="_blank"
         ><img
-          src="/imgs/lauren.jpg"
+          src="/imgs/lauren1.jpg"
           alt="Lauren"
           width="50"
           height="50"
