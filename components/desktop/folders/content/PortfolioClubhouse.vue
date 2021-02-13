@@ -4,7 +4,7 @@
     Clubhouse is an audio-chat platform founded by <a href="https://twitter.com/pdavison"><u>Paul Davison</u></a> and <a href="https://twitter.com/rohanseth"><u>Rohan Seth</u></a>.
     <br/><br/>
     <b>TLC'S INVESTMENT</b><br>
-    Casey, Lauren and Terri invested in the seed round of this company in July 2020.
+    Casey and Lauren invested in the seed round of this company in July 2020.
     <br><br>
     <b>CLUBHOUSE IN THE NEWS</b><br>
     <ul>
