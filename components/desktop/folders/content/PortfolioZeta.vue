@@ -4,7 +4,7 @@
      <a href="https://www.askzeta.com/"><u>Zeta</u></a> is a robust finance tracking tool for couples founded by <a href="https://twitter.com/aditishekar"><u>Aditi Shekar</u></a>. Many couples today piece together financial management solutions that include a conglomeration of tools like spreadsheets, Mint, and Venmo. Zeta is meant to be the one-size-fits all solution for couples to manage their finances.
     <br/><br/>
     <b>TLC'S INVESTMENT</b><br>
-    Lauren sourced this deal and we invested in June 2020.
+    Casey and Lauren sourced this deal and we invested in June 2020.
     <br><br>
     <b>ZETA IN THE NEWS</b>
     <br/>
