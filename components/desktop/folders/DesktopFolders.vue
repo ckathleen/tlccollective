@@ -47,6 +47,10 @@ export default {
           icon: '/imgs/internetfolder.png'
         },
         {
+          name: modalContentTypes.merch,
+          icon: '/imgs/merch5.png'
+        },
+        {
           name: modalContentTypes.contact,
           icon: '/imgs/email.png'
         }

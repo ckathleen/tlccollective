@@ -4,6 +4,7 @@ export default {
   blog: 'Our Blog',
   terminal: 'Terminal',
   team: 'Team',
+  merch: 'TLC Merch',
   contact: 'Get in Touch!',
   portfolio: 'Portfolio',
   zeta: 'Zeta',

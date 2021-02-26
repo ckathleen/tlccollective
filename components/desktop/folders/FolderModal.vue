@@ -31,6 +31,7 @@ import FolderContentTerminal from './content/Terminal'
 import FolderContentBlog from './content/Blog'
 import FolderContentMailingList from './content/MailingList'
 import FolderContentTeam from './content/Team'
+import FolderContentMerch from './content/Merch'
 import FolderContentContact from './content/Contact'
 import { mapState, mapMutations } from 'vuex'
 import modalContentTypes from '../../../constants/modalContentTypes'
@@ -93,6 +94,10 @@ export default {
 
         case modalContentTypes.friday:
           return FolderContentPortfolioFriday
+          break
+
+        case modalContentTypes.merch:
+          return FolderContentMerch
           break
 
         case modalContentTypes.mailinglist:
